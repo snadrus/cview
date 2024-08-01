@@ -1,4 +1,4 @@
-module github.com/snadrus/cview
+module code.rocketnine.space/tslocum/cview
 
 go 1.12
 

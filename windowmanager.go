@@ -27,6 +27,10 @@ func (wm *WindowManager) Add(w ...*Window) {
 	wm.Lock()
 	defer wm.Unlock()
 
+	for _, window := range w {
+		window.SetBorder(true)
+	}
+
 	wm.windows = append(wm.windows, w...)
 }
 
